@@ -3,7 +3,7 @@
 module.exports = function (context) {
     var fs = context.requireCordovaModule('fs'),
         path = context.requireCordovaModule('path'),
-        platformRoot = path.join(context.opts.projectRoot, 'platforms/android'),
+        platformRoot = path.join(context.opts.projectRoot, 'platforms\android\app\src\main'),
         manifestFile = path.join(platformRoot, 'AndroidManifest.xml');
 
     if (fs.existsSync(manifestFile)) {
